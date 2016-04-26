@@ -94,17 +94,19 @@ mysql> exit
 cmd> net stop mysql57
 ```
     * Find the .ini file that sets the default directory
+
 ```bash
 cmd> cd C:/ProgramData/MySQL/MySQL Server 5.7
 cmd> dir *.ini
 ```
 
-    * We need to change one line in my.ini, to do so requires opening it with administrator priviledges
-        - I opened notepad with admin privs
-        - find the line with datadir = ...
-        - change to where you want it to go
-            + datadir=D:/MySQLdata
-        - Save the my.ini
+* We need to change one line in my.ini, to do so requires opening it with administrator priviledges
+    - I opened notepad with admin privs
+    - find the line with datadir = ...
+    - change to where you want it to go
+        + datadir=D:/MySQLdata
+    - Save the my.ini
+
 * Restart MySQL server
 ```bash
 cmd> net start mysql57
@@ -228,12 +230,12 @@ cmd> cd C:/ProgramData/MySQL/MySQL Server 5.7
 cmd> dir *.ini
 ```
 
-    * We need to change one line in my.ini, to do so requires opening it with administrator priviledges
-        - I opened notepad with admin privs
-        - find the line with datadir = ...
-        - change to where you want it to go
-            + datadir=D:/MySQLdata
-        - Save the my.ini
+* We need to change one line in my.ini, to do so requires opening it with administrator priviledges
+    - I opened notepad with admin privs
+    - find the line with datadir = ...
+    - change to where you want it to go
+        + datadir=D:/MySQLdata
+    - Save the my.ini
 
 * Next, make a copy of the entire data folder in the new location
 ```bash
